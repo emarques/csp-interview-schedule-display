@@ -1,13 +1,13 @@
 # csp-interview-schedule-display
-Content Scheduling and Planning React Interview Test
+Content Scheduling and Planning (CSP) React Interview Test
 
 ## Scenario 
 Sky wants to modernise their existing back-office systems, moving away from stand-alone monoliths and into Web based applications. The first thing we want to do is to provide a new way of creating, visualising and interacting with TV schedules.
 
 ## Test Description 
-The first phase of this project consists in being able to visualize the schedule information for a given date and channel. To finish the first phase, we have to complete two stages. If you need to add more libraries, please state why on this README file.
+The first phase of this project consists in being able to visualize the schedule information for a given date and channel. To finish the first phase, we have to complete two stages.
 
-**We advise that you read some of the notes, further down on this document, in order to get to know which libraries were used and the commands that starts the ui and services** 
+**We advise that you read the notes, further down on this document, in order to get to know which libraries were used and the commands that starts the ui and services.** 
 
 ### First Stage – Adding Form Validation
 ----
@@ -21,18 +21,19 @@ It is part of the requirements, that upon clicking on "View Schedule" without ha
 
 ### Second Stage – Fetching and display the Schedule
 ----
-The API that returns the schedule is available available on the following endpoint:
+The API that returns the schedule, is available on the following endpoint:
 http://localhost:3001/schedule-repo/api/v1/schedule?channel={channel_input}&date={channel_input}
+**Check the notes on how to start this service**
 
-The requirement that was given to us was to fetch the data, and display it as table, with the following columns:
+The requirement that was given, is to fetch the data, and display the schedule information in a table format, with the following columns:
 * Start Time
 * End Time
 * Title Name
 
-**Please ensure you use TDD.** 
+**Please ensure you use TDD and use some state management** 
 
 ## Notes
-Libraries used:
+### Libraries
 * create-react-app - used to create the skeleton of the app
 * semantic-ui-css - the css framework that gives the styling
 * semantic-ui-react - provides react components for the styling components from semantic-ui
@@ -40,7 +41,9 @@ Libraries used:
 * moment - library to handle dates and times
 * react-input-mask - library that provides
 
-To start the application:
+If you need to add more libraries, please add them here and what's their function
+
+### Application commands
 * npm install / yarn install 
 * npm start / yarn start
-
+* npm run start-mockapi / yarn start-mockapi
